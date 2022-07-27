@@ -2,7 +2,10 @@
 
 Goal is to find any columns that relate to the crash severity, and build predictive models based on said variables.
 
-STEPS
+STEPS : 
+
 1)Data Cleaning and Preprocessing
+
 2)EDA
+
 3)MODEL Building [Machine Learning]
