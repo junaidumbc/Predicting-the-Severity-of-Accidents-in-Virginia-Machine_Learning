@@ -1,5 +1,5 @@
-# Predicting-the-Severity-of-Accidents-in-Virginia(Machine Learning)
-
+# Predicting-the-Severity-of-Accidents Crashes-in-Virginia(Machine Learning)
+![image](https://raw.githubusercontent.com/junaidumbc/Predicting-the-Severity-of-Accidents-in-Virginia-Machine_Learning/main/Car_img.png)
 ## Business Goal:
 To find any columns that relate to the crash severity, and build predictive models based on said variables.
 
@@ -31,7 +31,9 @@ For the models we used Logistic Regression, Decision Tree, and Random Forest.
 * However, we are not alarmed by these results since we expected this to happen based on the correlation matrix. Our thinking is correct if the accuracy of all these models should rise when including the PERSONS_INJURED column. When including the PERSONS_INJURED column, the accuracies are much better. Logistic Regression gave us an accuracy about 86%, Decision Tree gave us an accuracy of about 81%, and Random Forest gave us an accuracy of about 87%. Looking at the difference in the modeling scenarios that contain and do not contain the PERSONS_INJURED column, this makes sense. 
 
 * We expected the accuracy to raise tremendously due to how much PERSONS_INJURED related to the crash severity in the correlation matrix. These accuracies including the PERSONS_INJURED column is great, but we wanted to see if we could get an accuracy of at least 90% so we looked towards hyperparameter tuning. We tried hyperparameter tuning for all 3 of the modeling types we used, but the accuracy did not increase.  For each method, the accuracy of the hyperparameter tuned models were extremely close to the non-hyperparameter tuned models.  
- 	
+ 
+ ## Results
+ ![image](https://raw.githubusercontent.com/junaidumbc/Predicting-the-Severity-of-Accidents-in-Virginia-Machine_Learning/main/Results123.png)
  ## Conclusion
 In conclusion, using this Virginia Crash dataset we found that the PERSONS_INJURED column has a large correlation with the Crash Severity column. Looking at the Crash Severity definitions on the Virginia Roads website allows us to get the entire picture of our results. “Crash Severity is coded using the KABCO scale,… based on the most severe injury to any person involved in the crash” (Virginia Department of Transportation 2017). Thinking about it, the crashes with the most severe injuries are likely to have a higher number of people injured compared to other crashes. Like we mentioned earlier, Property Damage Only was the highest type of crash severity. When we look at a distribution of PERSONS_INJURED, 66.8% of the accidents had 0 people injured. Comparing the 66.8% of accidents that had 0 people injured and the 66.4% of accidents that were reported as Property Damage Only, proves the relationship between the two. When we started this project, we had an idea that the crash severity column from the dataset was made up of a multitude of columns. However, from the research we’ve done on the crash severity column shows us that the PERSONS_INJURED column has the most influence compared to the other columns. Although using the amount of people injured to predict the type of crash is impossible, we still got a great insight about the entire dataset. If we had more time, perhaps we could find a dataset that has the crash severity column based on more factors such as fatalities instead of just injuries.   
  
